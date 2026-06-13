@@ -191,6 +191,18 @@
             animation: fadeUp 0.8s ease 0.7s forwards;
         }
 
+        .hero-img {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--accent1);
+            box-shadow: 0 0 40px rgba(244, 172, 183, 0.4);
+            margin-bottom: 2rem;
+            opacity: 0;
+            animation: fadeUp 0.8s ease 0.3s forwards;
+        }
+
         .btn-primary {
             padding: 0.9rem 2rem;
             background: linear-gradient(135deg, var(--accent1), var(--accent4));
@@ -823,6 +835,7 @@
     <section class="hero" id="home">
         <div class="hero-bg"></div>
         <div class="hero-tag">Backend Engineer</div>
+        <img src="profile.jpg" alt="Irene Idara" class="hero-img">
         <h1 class="hero-name">Irene<br><span>Idara.</span></h1>
         <p class="hero-title">I build the invisible layer<br>that powers everything.</p>
         <p class="hero-desc">
@@ -898,6 +911,15 @@
                 <div class="skill-tags">
                     <span class="skill-tag">Node.js</span>
                     <span class="skill-tag">TypeScript</span>
+                </div>
+            </div>
+            <div class="skill-card reveal">
+                <div class="skill-name">HTML & CSS</div>
+                <p class="skill-desc">Comfortable building and styling simple static pages, enough to put together the
+                    frontends for my projects and this portfolio.</p>
+                <div class="skill-tags">
+                    <span class="skill-tag">HTML</span>
+                    <span class="skill-tag">CSS</span>
                 </div>
             </div>
             <div class="skill-card reveal">
