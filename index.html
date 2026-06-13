@@ -6,12 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Irene Idara — Backend Engineer</title>
 
-    <!-- Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@400;500&family=Nunito:wght@400;600;700&display=swap"
         rel="stylesheet">
 
-    <!-- Google Analytics — Replace G-XXXXXXXXXX with your Measurement ID -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2Q05EDJTHE"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -22,17 +20,17 @@
 
     <style>
         :root {
-            --bg: #0a0a0f;
-            --bg2: #111118;
-            --bg3: #1a1a24;
-            --card: #16161f;
-            --border: #2a2a3a;
-            --accent1: #7c3aed;
-            --accent2: #06b6d4;
-            --accent3: #f59e0b;
-            --accent4: #10b981;
-            --text: #f0f0ff;
-            --muted: #8888aa;
+            --bg: #1a0a0a;
+            --bg2: #1f1010;
+            --bg3: #2a1414;
+            --card: #241010;
+            --border: #4a2020;
+            --accent1: #9e1313;
+            --accent2: #6a1823;
+            --accent3: #530e21;
+            --accent4: #640505;
+            --text: #f5e8e8;
+            --muted: #b08a8a;
         }
 
         * {
@@ -52,7 +50,6 @@
             overflow-x: hidden;
         }
 
-        /* SCROLLBAR */
         ::-webkit-scrollbar {
             width: 6px;
         }
@@ -66,7 +63,6 @@
             border-radius: 3px;
         }
 
-        /* NAV */
         nav {
             position: fixed;
             top: 0;
@@ -77,7 +73,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background: rgba(10, 10, 15, 0.9);
+            background: rgba(26, 10, 10, 0.9);
             backdrop-filter: blur(20px);
             border-bottom: 1px solid var(--border);
         }
@@ -85,7 +81,7 @@
         .nav-logo {
             font-family: 'DM Mono', monospace;
             font-size: 0.9rem;
-            color: var(--accent2);
+            color: var(--accent1);
             letter-spacing: 0.1em;
             text-decoration: none;
         }
@@ -105,10 +101,9 @@
         }
 
         .nav-links a:hover {
-            color: var(--accent2);
+            color: var(--accent1);
         }
 
-        /* HERO */
         .hero {
             min-height: 100vh;
             display: flex;
@@ -123,16 +118,16 @@
             position: absolute;
             inset: 0;
             background:
-                radial-gradient(ellipse at 20% 50%, rgba(124, 58, 237, 0.15) 0%, transparent 60%),
-                radial-gradient(ellipse at 80% 20%, rgba(6, 182, 212, 0.12) 0%, transparent 60%),
-                radial-gradient(ellipse at 60% 80%, rgba(245, 158, 11, 0.08) 0%, transparent 50%);
+                radial-gradient(ellipse at 20% 50%, rgba(158, 19, 19, 0.18) 0%, transparent 60%),
+                radial-gradient(ellipse at 80% 20%, rgba(106, 24, 35, 0.15) 0%, transparent 60%),
+                radial-gradient(ellipse at 60% 80%, rgba(100, 5, 5, 0.12) 0%, transparent 50%);
             pointer-events: none;
         }
 
         .hero-tag {
             font-family: 'DM Mono', monospace;
             font-size: 0.8rem;
-            color: var(--accent2);
+            color: var(--accent1);
             letter-spacing: 0.2em;
             text-transform: uppercase;
             margin-bottom: 1.5rem;
@@ -147,7 +142,7 @@
             content: '';
             width: 40px;
             height: 1px;
-            background: var(--accent2);
+            background: var(--accent1);
         }
 
         .hero-name {
@@ -198,7 +193,7 @@
 
         .btn-primary {
             padding: 0.9rem 2rem;
-            background: linear-gradient(135deg, var(--accent1), var(--accent2));
+            background: linear-gradient(135deg, var(--accent1), var(--accent4));
             color: white;
             border: none;
             border-radius: 8px;
@@ -208,13 +203,13 @@
             cursor: pointer;
             text-decoration: none;
             transition: transform 0.2s, box-shadow 0.2s;
-            box-shadow: 0 0 30px rgba(124, 58, 237, 0.3);
+            box-shadow: 0 0 30px rgba(158, 19, 19, 0.35);
             display: inline-block;
         }
 
         .btn-primary:hover {
             transform: translateY(-2px);
-            box-shadow: 0 0 50px rgba(124, 58, 237, 0.5);
+            box-shadow: 0 0 50px rgba(158, 19, 19, 0.55);
         }
 
         .btn-secondary {
@@ -233,11 +228,10 @@
         }
 
         .btn-secondary:hover {
-            border-color: var(--accent2);
-            color: var(--accent2);
+            border-color: var(--accent1);
+            color: var(--accent1);
         }
 
-        /* SECTIONS */
         section {
             padding: 6rem 3rem;
             position: relative;
@@ -246,7 +240,7 @@
         .section-label {
             font-family: 'DM Mono', monospace;
             font-size: 0.75rem;
-            color: var(--accent2);
+            color: var(--accent1);
             letter-spacing: 0.2em;
             text-transform: uppercase;
             margin-bottom: 0.8rem;
@@ -259,7 +253,7 @@
             content: '';
             width: 30px;
             height: 1px;
-            background: var(--accent2);
+            background: var(--accent1);
         }
 
         .section-title {
@@ -270,7 +264,6 @@
             letter-spacing: -0.02em;
         }
 
-        /* ABOUT */
         #about {
             background: var(--bg2);
         }
@@ -335,7 +328,6 @@
             margin-top: 0.3rem;
         }
 
-        /* SKILLS */
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -362,6 +354,7 @@
             height: 3px;
             opacity: 0;
             transition: opacity 0.3s;
+            background: linear-gradient(90deg, var(--accent1), var(--accent2));
         }
 
         .skill-card:hover::before {
@@ -371,35 +364,7 @@
         .skill-card:hover {
             transform: translateY(-4px);
             border-color: transparent;
-        }
-
-        .skill-card.c1::before {
-            background: linear-gradient(90deg, var(--accent1), var(--accent2));
-        }
-
-        .skill-card.c2::before {
-            background: linear-gradient(90deg, var(--accent2), var(--accent4));
-        }
-
-        .skill-card.c3::before {
-            background: linear-gradient(90deg, var(--accent3), var(--accent1));
-        }
-
-        .skill-card:hover.c1 {
-            box-shadow: 0 20px 40px rgba(124, 58, 237, 0.2);
-        }
-
-        .skill-card:hover.c2 {
-            box-shadow: 0 20px 40px rgba(6, 182, 212, 0.2);
-        }
-
-        .skill-card:hover.c3 {
-            box-shadow: 0 20px 40px rgba(245, 158, 11, 0.2);
-        }
-
-        .skill-icon {
-            font-size: 1.8rem;
-            margin-bottom: 0.8rem;
+            box-shadow: 0 20px 40px rgba(158, 19, 19, 0.2);
         }
 
         .skill-name {
@@ -432,7 +397,6 @@
             color: var(--muted);
         }
 
-        /* PROJECTS */
         #projects {
             background: var(--bg2);
         }
@@ -457,7 +421,7 @@
         .project-card:hover {
             transform: translateY(-6px);
             border-color: var(--accent1);
-            box-shadow: 0 30px 60px rgba(124, 58, 237, 0.2);
+            box-shadow: 0 30px 60px rgba(158, 19, 19, 0.2);
         }
 
         .project-num {
@@ -490,8 +454,7 @@
         .project-features li {
             font-size: 0.85rem;
             color: var(--muted);
-            padding: 0.3rem 0;
-            padding-left: 1.2rem;
+            padding: 0.3rem 0 0.3rem 1.2rem;
             position: relative;
         }
 
@@ -499,7 +462,7 @@
             content: '→';
             position: absolute;
             left: 0;
-            color: var(--accent2);
+            color: var(--accent1);
         }
 
         .project-stack {
@@ -510,9 +473,9 @@
         }
 
         .stack-tag {
-            background: rgba(124, 58, 237, 0.15);
-            border: 1px solid rgba(124, 58, 237, 0.3);
-            color: var(--accent1);
+            background: rgba(158, 19, 19, 0.15);
+            border: 1px solid rgba(158, 19, 19, 0.3);
+            color: #d97a7a;
             border-radius: 6px;
             padding: 0.25rem 0.7rem;
             font-family: 'DM Mono', monospace;
@@ -540,11 +503,10 @@
         }
 
         .project-link:hover {
-            color: var(--accent2);
-            border-color: var(--accent2);
+            color: var(--accent1);
+            border-color: var(--accent1);
         }
 
-        /* EXPERIENCE */
         .timeline {
             max-width: 700px;
             position: relative;
@@ -580,7 +542,7 @@
         .timeline-period {
             font-family: 'DM Mono', monospace;
             font-size: 0.75rem;
-            color: var(--accent2);
+            color: var(--accent1);
             letter-spacing: 0.1em;
             margin-bottom: 0.5rem;
         }
@@ -614,111 +576,47 @@
             content: '▸';
             position: absolute;
             left: 0;
-            color: var(--accent3);
+            color: var(--accent1);
             font-size: 0.7rem;
         }
 
-        /* RESUME */
         #resume {
             background: var(--bg2);
         }
 
         .resume-inner {
-            max-width: 800px;
+            max-width: 700px;
         }
 
-        .resume-preview {
+        .resume-card {
             background: var(--card);
             border: 1px solid var(--border);
             border-radius: 20px;
-            padding: 3rem;
-            margin-bottom: 2rem;
+            padding: 2.5rem;
+            text-align: center;
         }
 
-        .resume-name {
+        .resume-card-title {
             font-family: 'Syne', sans-serif;
-            font-size: 2rem;
-            font-weight: 800;
-            margin-bottom: 0.3rem;
-            background: linear-gradient(135deg, var(--accent1), var(--accent2));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .resume-role {
-            color: var(--muted);
-            margin-bottom: 1.5rem;
-            font-size: 1rem;
-        }
-
-        .resume-section {
-            margin-bottom: 1.5rem;
-        }
-
-        .resume-section-title {
-            font-family: 'DM Mono', monospace;
-            font-size: 0.75rem;
-            color: var(--accent2);
-            letter-spacing: 0.15em;
-            text-transform: uppercase;
-            margin-bottom: 0.8rem;
-            padding-bottom: 0.4rem;
-            border-bottom: 1px solid var(--border);
-        }
-
-        .resume-item {
-            margin-bottom: 0.8rem;
-        }
-
-        .resume-item-title {
+            font-size: 1.4rem;
             font-weight: 700;
+            margin-bottom: 0.8rem;
+        }
+
+        .resume-card-desc {
+            color: var(--muted);
             font-size: 0.95rem;
-            margin-bottom: 0.2rem;
-        }
-
-        .resume-item-sub {
-            color: var(--muted);
-            font-size: 0.85rem;
-            margin-bottom: 0.3rem;
-        }
-
-        .resume-item-desc {
-            color: var(--muted);
-            font-size: 0.85rem;
-            line-height: 1.6;
-        }
-
-        .skills-inline {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.4rem;
-        }
-
-        .skills-inline span {
-            background: var(--bg3);
-            border: 1px solid var(--border);
-            border-radius: 6px;
-            padding: 0.2rem 0.7rem;
-            font-family: 'DM Mono', monospace;
-            font-size: 0.7rem;
-            color: var(--muted);
+            line-height: 1.7;
+            margin-bottom: 2rem;
         }
 
         .resume-actions {
             display: flex;
             gap: 1rem;
             flex-wrap: wrap;
+            justify-content: center;
         }
 
-        .resume-note {
-            color: var(--muted);
-            font-size: 0.85rem;
-            font-style: italic;
-            margin-top: 1rem;
-        }
-
-        /* CONTACT */
         .contact-inner {
             max-width: 600px;
             margin: 0 auto;
@@ -749,7 +647,7 @@
             display: block;
             font-family: 'DM Mono', monospace;
             font-size: 0.75rem;
-            color: var(--accent2);
+            color: var(--accent1);
             letter-spacing: 0.1em;
             text-transform: uppercase;
             margin-bottom: 0.5rem;
@@ -771,7 +669,7 @@
 
         .form-group input:focus,
         .form-group textarea:focus {
-            border-color: var(--accent2);
+            border-color: var(--accent1);
         }
 
         .form-group textarea {
@@ -782,7 +680,7 @@
         .form-submit {
             width: 100%;
             padding: 1rem;
-            background: linear-gradient(135deg, var(--accent1), var(--accent2));
+            background: linear-gradient(135deg, var(--accent1), var(--accent4));
             color: white;
             border: none;
             border-radius: 10px;
@@ -795,15 +693,15 @@
 
         .form-submit:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(124, 58, 237, 0.4);
+            box-shadow: 0 10px 30px rgba(158, 19, 19, 0.4);
         }
 
         .success-banner {
-            background: rgba(16, 185, 129, 0.1);
-            border: 1px solid var(--accent4);
+            background: rgba(100, 5, 5, 0.15);
+            border: 1px solid var(--accent1);
             border-radius: 10px;
             padding: 1rem;
-            color: var(--accent4);
+            color: #e89a9a;
             text-align: center;
             display: none;
             margin-top: 1rem;
@@ -833,13 +731,12 @@
         }
 
         .contact-link:hover {
-            border-color: var(--accent2);
-            background: rgba(6, 182, 212, 0.05);
+            border-color: var(--accent1);
+            background: rgba(158, 19, 19, 0.05);
             transform: translateX(5px);
-            color: var(--accent2);
+            color: var(--accent1);
         }
 
-        /* FOOTER */
         footer {
             padding: 2rem 3rem;
             border-top: 1px solid var(--border);
@@ -851,7 +748,6 @@
             font-size: 0.75rem;
         }
 
-        /* ANIMATIONS */
         @keyframes fadeUp {
             from {
                 opacity: 0;
@@ -875,7 +771,6 @@
             transform: translateY(0);
         }
 
-        /* RESPONSIVE */
         @media (max-width: 768px) {
             nav {
                 padding: 1rem 1.5rem;
@@ -913,7 +808,6 @@
 
 <body>
 
-    <!-- NAV -->
     <nav>
         <a href="#home" class="nav-logo">irene.dev</a>
         <ul class="nav-links">
@@ -926,10 +820,9 @@
         </ul>
     </nav>
 
-    <!-- HERO -->
     <section class="hero" id="home">
         <div class="hero-bg"></div>
-        <div class="hero-tag">Backend Engineer · Nigeria 🇳🇬</div>
+        <div class="hero-tag">Backend Engineer · Nigeria</div>
         <h1 class="hero-name">Irene<br><span>Idara.</span></h1>
         <p class="hero-title">I build the invisible layer<br>that powers everything.</p>
         <p class="hero-desc">
@@ -943,63 +836,70 @@
         </div>
     </section>
 
-    <!-- ABOUT -->
     <section id="about">
         <div class="section-label">get to know me</div>
         <h2 class="section-title">About Me</h2>
         <div class="about-grid reveal">
             <div class="about-text">
-                <p>Hey! I'm Irene — a <strong>Backend Engineer</strong> from Nigeria with a background in Microbiology.
-                    I made the leap into software because I realized I loved building systems just as much as studying
-                    them.</p>
-                <p>I specialize in <strong>Python backend development</strong> using FastAPI and PostgreSQL. I've built
-                    and deployed three production APIs covering real estate, inventory management, and e-learning — from
-                    database design to cloud deployment, all end-to-end.</p>
-                <p>Before I got into tech I worked in <strong>IT support</strong>, which gave me a solid foundation for
-                    debugging, systems thinking, and working with people.</p>
-                <p>Currently looking for <strong>backend engineering roles</strong> where I can keep growing and build
-                    things that matter. 🚀</p>
+                <p>I'm Irene — a <strong>Backend Engineer</strong> based in Nigeria, focused on building reliable,
+                    well-structured APIs with <strong>Python and FastAPI</strong>. My background also includes a year of
+                    <strong>QA Engineering</strong>, which gave me a sharp eye for edge cases, testing workflows, and
+                    what "production-ready" actually means.</p>
+                <p>I work end-to-end — from database schema design with <strong>PostgreSQL and SQLAlchemy</strong>, to
+                    authentication with <strong>JWT</strong>, to deployment on cloud platforms. I've designed and
+                    shipped three personal projects covering real estate, inventory management, and e-learning, each
+                    with full CRUD, role-based access, and cloud image storage.</p>
+                <p>I'm also expanding into <strong>Node.js and TypeScript</strong> to broaden what I can build across
+                    the stack.</p>
+                <p>Currently open to <strong>backend engineering roles</strong> where I can contribute from day one and
+                    keep growing.</p>
             </div>
             <div class="stats-grid">
                 <div class="stat-card">
                     <div class="stat-num">3</div>
-                    <div class="stat-label">Production APIs</div>
+                    <div class="stat-label">Personal Projects</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-num">5+</div>
                     <div class="stat-label">Technologies</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-num">1yr</div>
-                    <div class="stat-label">IT Experience</div>
+                    <div class="stat-num">2yr</div>
+                    <div class="stat-label">QA Experience</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-num">∞</div>
-                    <div class="stat-label">Curiosity</div>
+                    <div class="stat-num">+</div>
+                    <div class="stat-label">More Coming Soon</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SKILLS -->
     <section id="skills">
         <div class="section-label">what I work with</div>
         <h2 class="section-title">Technical Skills</h2>
         <div class="skills-grid">
-            <div class="skill-card c1 reveal">
-                <div class="skill-icon">🐍</div>
+            <div class="skill-card reveal">
                 <div class="skill-name">Python & FastAPI</div>
                 <p class="skill-desc">My primary stack. I build async REST APIs with automatic docs, type safety, and
                     clean architecture.</p>
                 <div class="skill-tags">
                     <span class="skill-tag">FastAPI</span>
-                    <span class="skill-tag">Python 3.14</span>
+                    <span class="skill-tag">Python</span>
                     <span class="skill-tag">Pydantic</span>
                     <span class="skill-tag">Async/Await</span>
                 </div>
             </div>
-            <div class="skill-card c2 reveal">
-                <div class="skill-icon">🗄️</div>
+            <div class="skill-card reveal">
+                <div class="skill-name">Node.js & TypeScript</div>
+                <p class="skill-desc">Expanding my backend toolkit to build and reason about JavaScript/TypeScript based
+                    services.</p>
+                <div class="skill-tags">
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">TypeScript</span>
+                </div>
+            </div>
+            <div class="skill-card reveal">
                 <div class="skill-name">Databases</div>
                 <p class="skill-desc">PostgreSQL for production data, SQLAlchemy for ORM, Alembic for migrations. I
                     design schemas that scale.</p>
@@ -1010,8 +910,7 @@
                     <span class="skill-tag">Schema Design</span>
                 </div>
             </div>
-            <div class="skill-card c3 reveal">
-                <div class="skill-icon">🔐</div>
+            <div class="skill-card reveal">
                 <div class="skill-name">Auth & Security</div>
                 <p class="skill-desc">JWT tokens, bcrypt password hashing, OAuth2, role-based access control. Security
                     is never an afterthought.</p>
@@ -1022,8 +921,7 @@
                     <span class="skill-tag">RBAC</span>
                 </div>
             </div>
-            <div class="skill-card c1 reveal">
-                <div class="skill-icon">☁️</div>
+            <div class="skill-card reveal">
                 <div class="skill-name">Cloud & DevOps</div>
                 <p class="skill-desc">Deploying APIs on Render, image storage with Cloudinary, version control with Git
                     and GitHub.</p>
@@ -1034,40 +932,28 @@
                     <span class="skill-tag">GitHub</span>
                 </div>
             </div>
-            <div class="skill-card c2 reveal">
-                <div class="skill-icon">🧪</div>
-                <div class="skill-name">API Testing</div>
-                <p class="skill-desc">Testing all endpoints with Postman, using Swagger UI for interactive docs and
-                    debugging.</p>
+            <div class="skill-card reveal">
+                <div class="skill-name">API Testing & QA</div>
+                <p class="skill-desc">Testing all endpoints with Postman, using Swagger UI for interactive docs — backed
+                    by a QA background focused on catching edge cases.</p>
                 <div class="skill-tags">
                     <span class="skill-tag">Postman</span>
                     <span class="skill-tag">Swagger UI</span>
                     <span class="skill-tag">REST APIs</span>
-                </div>
-            </div>
-            <div class="skill-card c3 reveal">
-                <div class="skill-icon">📐</div>
-                <div class="skill-name">Currently Learning</div>
-                <p class="skill-desc">Always growing. Currently diving into caching, rate limiting, and system design
-                    principles.</p>
-                <div class="skill-tags">
-                    <span class="skill-tag">Redis</span>
-                    <span class="skill-tag">Rate Limiting</span>
-                    <span class="skill-tag">System Design</span>
+                    <span class="skill-tag">Manual Testing</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- PROJECTS -->
     <section id="projects">
         <div class="section-label">things I've shipped</div>
-        <h2 class="section-title">Projects</h2>
+        <h2 class="section-title">Personal Projects</h2>
         <div class="projects-grid">
 
             <div class="project-card reveal">
                 <div class="project-num">01 / REAL ESTATE</div>
-                <h3 class="project-title">Real Estate Listing API 🏠</h3>
+                <h3 class="project-title">Real Estate Listing API</h3>
                 <p class="project-desc">A production-grade property listing backend with everything a real estate
                     platform needs.</p>
                 <ul class="project-features">
@@ -1086,16 +972,15 @@
                     <span class="stack-tag">Render</span>
                 </div>
                 <div class="project-links">
-                    <a href="https://real-estate-api-1-6678.onrender.com/docs" target="_blank" class="project-link">⚡
-                        Live API</a>
-                    <a href="https://github.com/1-dara/real-estate-api" target="_blank" class="project-link">💻
-                        GitHub</a>
+                    <a href="https://real-estate-api-1-6678.onrender.com/docs" target="_blank" class="project-link">Live
+                        API</a>
+                    <a href="https://github.com/1-dara/real-estate-api" target="_blank" class="project-link">GitHub</a>
                 </div>
             </div>
 
             <div class="project-card reveal">
                 <div class="project-num">02 / INVENTORY</div>
-                <h3 class="project-title">Inventory Management API 🏪</h3>
+                <h3 class="project-title">Inventory Management API</h3>
                 <p class="project-desc">A retail inventory backend with full audit trails, stock tracking, and automated
                     alerts.</p>
                 <ul class="project-features">
@@ -1113,15 +998,15 @@
                     <span class="stack-tag">Render</span>
                 </div>
                 <div class="project-links">
-                    <a href="https://inventory-api-vd7f.onrender.com/docs" target="_blank" class="project-link">⚡ Live
+                    <a href="https://inventory-api-vd7f.onrender.com/docs" target="_blank" class="project-link">Live
                         API</a>
-                    <a href="https://github.com/1-dara/inventory-api" target="_blank" class="project-link">💻 GitHub</a>
+                    <a href="https://github.com/1-dara/inventory-api" target="_blank" class="project-link">GitHub</a>
                 </div>
             </div>
 
             <div class="project-card reveal">
                 <div class="project-num">03 / E-LEARNING</div>
-                <h3 class="project-title">Learning Management System API 📚</h3>
+                <h3 class="project-title">Learning Management System API</h3>
                 <p class="project-desc">An LMS backend supporting courses, lessons, enrollments, and media uploads.</p>
                 <ul class="project-features">
                     <li>Admin, instructor & student roles</li>
@@ -1139,15 +1024,14 @@
                     <span class="stack-tag">Render</span>
                 </div>
                 <div class="project-links">
-                    <a href="https://lms-api-3p9x.onrender.com/docs" target="_blank" class="project-link">⚡ Live API</a>
-                    <a href="https://github.com/1-dara/lms-api" target="_blank" class="project-link">💻 GitHub</a>
+                    <a href="https://lms-api-3p9x.onrender.com/docs" target="_blank" class="project-link">Live API</a>
+                    <a href="https://github.com/1-dara/lms-api" target="_blank" class="project-link">GitHub</a>
                 </div>
             </div>
 
         </div>
     </section>
 
-    <!-- EXPERIENCE -->
     <section id="experience">
         <div class="section-label">my journey</div>
         <h2 class="section-title">Experience & Education</h2>
@@ -1157,9 +1041,9 @@
                 <div class="timeline-dot" style="background: var(--accent1)"></div>
                 <div class="timeline-period">2024 – Present</div>
                 <div class="timeline-role">Backend Engineer</div>
-                <div class="timeline-company">Self-directed · Portfolio Projects</div>
+                <div class="timeline-company">Self-directed · Personal Projects</div>
                 <ul class="timeline-desc">
-                    <li>Built 3 production APIs from scratch using FastAPI, PostgreSQL, and Alembic</li>
+                    <li>Built 3 personal production-style APIs using FastAPI, PostgreSQL, and Alembic</li>
                     <li>Implemented JWT authentication, role-based access control, and Cloudinary integration</li>
                     <li>Deployed all projects to Render with live PostgreSQL databases</li>
                 </ul>
@@ -1167,6 +1051,18 @@
 
             <div class="timeline-item">
                 <div class="timeline-dot" style="background: var(--accent2)"></div>
+                <div class="timeline-period">Feb 2025 – Apr 2026</div>
+                <div class="timeline-role">QA Engineer</div>
+                <div class="timeline-company">Kinetech Digital Design</div>
+                <ul class="timeline-desc">
+                    <li>Sole QA covering manual testing across multiple apps and websites</li>
+                    <li>Wrote test cases and test plans, and tracked bugs through to resolution</li>
+                    <li>Performed API testing using Postman</li>
+                </ul>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot" style="background: var(--accent4)"></div>
                 <div class="timeline-period">2023 – 2024</div>
                 <div class="timeline-role">IT Support Specialist</div>
                 <div class="timeline-company">Edgard Consulting Limited</div>
@@ -1192,101 +1088,32 @@
         </div>
     </section>
 
-    <!-- RESUME -->
     <section id="resume">
         <div class="section-label">my credentials</div>
         <h2 class="section-title">Resume</h2>
         <div class="resume-inner reveal">
-            <div class="resume-preview">
-
-                <div class="resume-name">Irene Peter-Okon Idara</div>
-                <div class="resume-role">Backend Engineer · 1ireneokon@gmail.com · 09074342716 · github.com/1-dara ·
-                    Nigeria</div>
-
-                <div class="resume-section">
-                    <div class="resume-section-title">Professional Summary</div>
-                    <p class="resume-item-desc">Results-driven Backend Engineer with hands-on experience building and
-                        deploying production-grade REST APIs using FastAPI and PostgreSQL. Skilled in JWT
-                        authentication, database schema design, cloud deployments, and third-party API integrations.
-                        Built and shipped three fully deployed backend systems covering real estate, inventory
-                        management, and e-learning.</p>
+            <div class="resume-card">
+                <div class="resume-card-title">Want to see my full resume?</div>
+                <p class="resume-card-desc">View my resume directly, or send me a quick message and I'll share a copy
+                    with you.</p>
+                <div class="resume-actions">
+                    <a href="YOUR_RESUME_VIEW_LINK" target="_blank" class="btn-primary">View Resume</a>
+                    <a href="mailto:1ireneokon@gmail.com?subject=Resume Request — [Your Name]&body=Hi Irene, I'd like to request a copy of your resume. My name is [Your Name] from [Company]."
+                        class="btn-secondary">Request a Copy</a>
                 </div>
-
-                <div class="resume-section">
-                    <div class="resume-section-title">Technical Skills</div>
-                    <div class="skills-inline">
-                        <span>Python</span><span>FastAPI</span><span>PostgreSQL</span>
-                        <span>SQLAlchemy</span><span>Alembic</span><span>JWT</span>
-                        <span>bcrypt</span><span>Cloudinary</span><span>Render</span>
-                        <span>Git</span><span>GitHub</span><span>Postman</span>
-                        <span>REST APIs</span><span>Pydantic</span>
-                    </div>
-                </div>
-
-                <div class="resume-section">
-                    <div class="resume-section-title">Projects</div>
-                    <div class="resume-item">
-                        <div class="resume-item-title">Real Estate Listing API</div>
-                        <div class="resume-item-sub">FastAPI · PostgreSQL · JWT · Cloudinary · Render</div>
-                        <div class="resume-item-desc">Production API with property CRUD, search/filters, pagination, JWT
-                            auth with agent/user roles, reviews, and Cloudinary image uploads.</div>
-                    </div>
-                    <div class="resume-item">
-                        <div class="resume-item-title">Inventory Management API</div>
-                        <div class="resume-item-sub">FastAPI · PostgreSQL · JWT · Render</div>
-                        <div class="resume-item-desc">Retail inventory system with stock tracking, audit trails, low
-                            stock alerts, sales recording with automatic price calculation.</div>
-                    </div>
-                    <div class="resume-item">
-                        <div class="resume-item-title">Learning Management System API</div>
-                        <div class="resume-item-sub">FastAPI · PostgreSQL · JWT · Cloudinary · Render</div>
-                        <div class="resume-item-desc">LMS backend with courses, lessons, enrollments, role-based access
-                            (admin/instructor/student), and media uploads.</div>
-                    </div>
-                </div>
-
-                <div class="resume-section">
-                    <div class="resume-section-title">Experience</div>
-                    <div class="resume-item">
-                        <div class="resume-item-title">IT Support Specialist</div>
-                        <div class="resume-item-sub">Edgard Consulting Limited · 2023 – 2024</div>
-                        <div class="resume-item-desc">Hardware troubleshooting, software installation, network
-                            configuration, staff training.</div>
-                    </div>
-                </div>
-
-                <div class="resume-section">
-                    <div class="resume-section-title">Education</div>
-                    <div class="resume-item">
-                        <div class="resume-item-title">B.Sc. Microbiology</div>
-                        <div class="resume-item-sub">Federal University of Lafia, Nasarawa State · 2021 – 2025</div>
-                    </div>
-                </div>
-
             </div>
-
-            <div class="resume-actions">
-                <a href="mailto:1ireneokon@gmail.com?subject=Resume Request — [Your Name]&body=Hi Irene, I came across your portfolio and would like to request a copy of your resume. My name is [Your Name] and I am reaching out from [Company/Organization]."
-                    class="btn-primary">
-                    📧 Request Resume Copy
-                </a>
-            </div>
-            <p class="resume-note">💡 Want a downloadable copy? Click the button above to send me a quick email and I'll
-                get back to you within 24 hours!</p>
         </div>
     </section>
 
-    <!-- CONTACT -->
     <section id="contact">
         <div class="contact-inner">
             <div class="section-label" style="justify-content:center">let's talk</div>
             <h2 class="section-title" style="text-align:center">Get In Touch</h2>
             <p class="contact-tagline reveal">
-                I'm currently <strong style="color:var(--accent4)">open to opportunities</strong> — whether it's a
+                I'm currently <strong style="color:var(--accent1)">open to opportunities</strong> — whether it's a
                 full-time role, internship, or freelance project. Fill the form below or reach out directly!
             </p>
 
-            <!-- Replace YOUR_FORM_ID with your Formspree form ID -->
             <form class="contact-form reveal" action="https://formspree.io/f/mgoblvyg" method="POST" id="contact-form">
                 <div class="form-group">
                     <label>Your Name</label>
@@ -1300,34 +1127,32 @@
                     <label>Message</label>
                     <textarea name="message" placeholder="Hi Irene, I'd like to discuss..." required></textarea>
                 </div>
-                <button type="submit" class="form-submit">Send Message 🚀</button>
+                <button type="submit" class="form-submit">Send Message</button>
                 <div class="success-banner" id="success-banner">
-                    ✅ Message sent! I'll get back to you within 24 hours.
+                    Message sent! I'll get back to you within 24 hours.
                 </div>
             </form>
 
             <div class="contact-links reveal">
                 <a href="mailto:1ireneokon@gmail.com" class="contact-link">
-                    <span>📧</span> 1ireneokon@gmail.com
+                    <span>Email —</span> 1ireneokon@gmail.com
                 </a>
                 <a href="https://github.com/1-dara" target="_blank" class="contact-link">
-                    <span>🐙</span> github.com/1-dara
+                    <span>GitHub —</span> github.com/1-dara
                 </a>
                 <a href="tel:+2349074342716" class="contact-link">
-                    <span>📱</span> +234 907 434 2716
+                    <span>Phone —</span> +234 907 434 2716
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- FOOTER -->
     <footer>
         <span>© 2025 Irene Peter-Okon Idara</span>
-        <span>Built with 💜 and a lot of FastAPI</span>
+        <span>Built with FastAPI and a lot of coffee</span>
     </footer>
 
     <script>
-        // Scroll reveal
         const reveals = document.querySelectorAll('.reveal');
         const observer = new IntersectionObserver(entries => {
             entries.forEach((entry, i) => {
@@ -1338,7 +1163,6 @@
         }, { threshold: 0.1 });
         reveals.forEach(el => observer.observe(el));
 
-        // Contact form
         const form = document.getElementById('contact-form');
         form.addEventListener('submit', async (e) => {
             e.preventDefault();
