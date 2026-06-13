@@ -20,17 +20,17 @@
 
     <style>
         :root {
-            --bg: #1a0a0a;
-            --bg2: #1f1010;
-            --bg3: #2a1414;
-            --card: #241010;
-            --border: #4a2020;
-            --accent1: #9e1313;
-            --accent2: #6a1823;
-            --accent3: #530e21;
-            --accent4: #640505;
-            --text: #f5e8e8;
-            --muted: #b08a8a;
+            --bg: #2a1a1c;
+            --bg2: #311e21;
+            --bg3: #3d2529;
+            --card: #362024;
+            --border: #5a3a3e;
+            --accent1: #f4acb7;
+            --accent2: #ffcad4;
+            --accent3: #d8e2dc;
+            --accent4: #9d8189;
+            --text: #fdf6f3;
+            --muted: #c9a8ad;
         }
 
         * {
@@ -73,7 +73,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background: rgba(26, 10, 10, 0.9);
+            background: rgba(42, 26, 28, 0.9);
             backdrop-filter: blur(20px);
             border-bottom: 1px solid var(--border);
         }
@@ -118,9 +118,9 @@
             position: absolute;
             inset: 0;
             background:
-                radial-gradient(ellipse at 20% 50%, rgba(158, 19, 19, 0.18) 0%, transparent 60%),
-                radial-gradient(ellipse at 80% 20%, rgba(106, 24, 35, 0.15) 0%, transparent 60%),
-                radial-gradient(ellipse at 60% 80%, rgba(100, 5, 5, 0.12) 0%, transparent 50%);
+                radial-gradient(ellipse at 20% 50%, rgba(244, 172, 183, 0.18) 0%, transparent 60%),
+                radial-gradient(ellipse at 80% 20%, rgba(255, 202, 212, 0.15) 0%, transparent 60%),
+                radial-gradient(ellipse at 60% 80%, rgba(157, 129, 137, 0.15) 0%, transparent 50%);
             pointer-events: none;
         }
 
@@ -157,7 +157,7 @@
         }
 
         .hero-name span {
-            background: linear-gradient(135deg, var(--accent1), var(--accent2));
+            background: linear-gradient(135deg, var(--accent1), var(--accent3));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -194,7 +194,7 @@
         .btn-primary {
             padding: 0.9rem 2rem;
             background: linear-gradient(135deg, var(--accent1), var(--accent4));
-            color: white;
+            color: #2a1a1c;
             border: none;
             border-radius: 8px;
             font-family: 'Nunito', sans-serif;
@@ -203,13 +203,13 @@
             cursor: pointer;
             text-decoration: none;
             transition: transform 0.2s, box-shadow 0.2s;
-            box-shadow: 0 0 30px rgba(158, 19, 19, 0.35);
+            box-shadow: 0 0 30px rgba(244, 172, 183, 0.3);
             display: inline-block;
         }
 
         .btn-primary:hover {
             transform: translateY(-2px);
-            box-shadow: 0 0 50px rgba(158, 19, 19, 0.55);
+            box-shadow: 0 0 50px rgba(244, 172, 183, 0.5);
         }
 
         .btn-secondary {
@@ -313,7 +313,7 @@
             font-family: 'Syne', sans-serif;
             font-size: 2.5rem;
             font-weight: 800;
-            background: linear-gradient(135deg, var(--accent1), var(--accent2));
+            background: linear-gradient(135deg, var(--accent1), var(--accent3));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -354,7 +354,7 @@
             height: 3px;
             opacity: 0;
             transition: opacity 0.3s;
-            background: linear-gradient(90deg, var(--accent1), var(--accent2));
+            background: linear-gradient(90deg, var(--accent1), var(--accent3));
         }
 
         .skill-card:hover::before {
@@ -364,7 +364,7 @@
         .skill-card:hover {
             transform: translateY(-4px);
             border-color: transparent;
-            box-shadow: 0 20px 40px rgba(158, 19, 19, 0.2);
+            box-shadow: 0 20px 40px rgba(244, 172, 183, 0.15);
         }
 
         .skill-name {
@@ -421,7 +421,7 @@
         .project-card:hover {
             transform: translateY(-6px);
             border-color: var(--accent1);
-            box-shadow: 0 30px 60px rgba(158, 19, 19, 0.2);
+            box-shadow: 0 30px 60px rgba(244, 172, 183, 0.15);
         }
 
         .project-num {
@@ -473,9 +473,9 @@
         }
 
         .stack-tag {
-            background: rgba(158, 19, 19, 0.15);
-            border: 1px solid rgba(158, 19, 19, 0.3);
-            color: #d97a7a;
+            background: rgba(244, 172, 183, 0.15);
+            border: 1px solid rgba(244, 172, 183, 0.3);
+            color: var(--accent1);
             border-radius: 6px;
             padding: 0.25rem 0.7rem;
             font-family: 'DM Mono', monospace;
@@ -519,7 +519,7 @@
             top: 0;
             bottom: 0;
             width: 2px;
-            background: linear-gradient(to bottom, var(--accent1), var(--accent2), var(--accent4));
+            background: linear-gradient(to bottom, var(--accent1), var(--accent3), var(--accent4));
             border-radius: 2px;
         }
 
@@ -681,7 +681,7 @@
             width: 100%;
             padding: 1rem;
             background: linear-gradient(135deg, var(--accent1), var(--accent4));
-            color: white;
+            color: #2a1a1c;
             border: none;
             border-radius: 10px;
             font-family: 'Nunito', sans-serif;
@@ -693,15 +693,15 @@
 
         .form-submit:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(158, 19, 19, 0.4);
+            box-shadow: 0 10px 30px rgba(244, 172, 183, 0.4);
         }
 
         .success-banner {
-            background: rgba(100, 5, 5, 0.15);
-            border: 1px solid var(--accent1);
+            background: rgba(216, 226, 220, 0.12);
+            border: 1px solid var(--accent3);
             border-radius: 10px;
             padding: 1rem;
-            color: #e89a9a;
+            color: var(--accent3);
             text-align: center;
             display: none;
             margin-top: 1rem;
@@ -732,7 +732,7 @@
 
         .contact-link:hover {
             border-color: var(--accent1);
-            background: rgba(158, 19, 19, 0.05);
+            background: rgba(244, 172, 183, 0.05);
             transform: translateX(5px);
             color: var(--accent1);
         }
@@ -841,18 +841,19 @@
         <h2 class="section-title">About Me</h2>
         <div class="about-grid reveal">
             <div class="about-text">
-                <p>I'm Irene — a <strong>Backend Engineer</strong> based in Nigeria, focused on building reliable,
-                    well-structured APIs with <strong>Python and FastAPI</strong>. My background also includes a year of
-                    <strong>QA Engineering</strong>, which gave me a sharp eye for edge cases, testing workflows, and
-                    what "production-ready" actually means.</p>
-                <p>I work end-to-end — from database schema design with <strong>PostgreSQL and SQLAlchemy</strong>, to
-                    authentication with <strong>JWT</strong>, to deployment on cloud platforms. I've designed and
-                    shipped three personal projects covering real estate, inventory management, and e-learning, each
-                    with full CRUD, role-based access, and cloud image storage.</p>
-                <p>I'm also expanding into <strong>Node.js and TypeScript</strong> to broaden what I can build across
-                    the stack.</p>
-                <p>Currently open to <strong>backend engineering roles</strong> where I can contribute from day one and
-                    keep growing.</p>
+                <p>I'm Irene, a backend engineer based in Nigeria. My path here wasn't a straight line. I spent two
+                    years working in IT support and QA testing, which meant a lot of time digging into how systems
+                    behave, why things break, and what "working correctly" really means from a user's perspective. That
+                    experience shapes how I build software today.</p>
+                <p>Over the past couple of years I've focused on backend development with Python and FastAPI, building
+                    out three personal projects covering real estate, inventory management, and e-learning. Each one has
+                    full CRUD, role based access, JWT authentication, and cloud image storage, and each is deployed and
+                    live.</p>
+                <p>I work end to end, from designing database schemas with PostgreSQL and SQLAlchemy, to handling
+                    authentication, to deploying on cloud platforms. I'm also expanding into Node.js and TypeScript to
+                    broaden what I can build.</p>
+                <p>Currently open to backend engineering roles where I can contribute from my first day and keep
+                    growing.</p>
             </div>
             <div class="stats-grid">
                 <div class="stat-card">
@@ -868,8 +869,8 @@
                     <div class="stat-label">QA Experience</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-num">+</div>
-                    <div class="stat-label">More Coming Soon</div>
+                    <div class="stat-num">2yr</div>
+                    <div class="stat-label">IT Support Experience</div>
                 </div>
             </div>
         </div>
@@ -892,8 +893,8 @@
             </div>
             <div class="skill-card reveal">
                 <div class="skill-name">Node.js & TypeScript</div>
-                <p class="skill-desc">Expanding my backend toolkit to build and reason about JavaScript/TypeScript based
-                    services.</p>
+                <p class="skill-desc">Expanding my backend toolkit to build and reason about JavaScript and TypeScript
+                    based services.</p>
                 <div class="skill-tags">
                     <span class="skill-tag">Node.js</span>
                     <span class="skill-tag">TypeScript</span>
@@ -912,7 +913,7 @@
             </div>
             <div class="skill-card reveal">
                 <div class="skill-name">Auth & Security</div>
-                <p class="skill-desc">JWT tokens, bcrypt password hashing, OAuth2, role-based access control. Security
+                <p class="skill-desc">JWT tokens, bcrypt password hashing, OAuth2, role based access control. Security
                     is never an afterthought.</p>
                 <div class="skill-tags">
                     <span class="skill-tag">JWT</span>
@@ -934,7 +935,7 @@
             </div>
             <div class="skill-card reveal">
                 <div class="skill-name">API Testing & QA</div>
-                <p class="skill-desc">Testing all endpoints with Postman, using Swagger UI for interactive docs — backed
+                <p class="skill-desc">Testing all endpoints with Postman, using Swagger UI for interactive docs, backed
                     by a QA background focused on catching edge cases.</p>
                 <div class="skill-tags">
                     <span class="skill-tag">Postman</span>
@@ -957,7 +958,7 @@
                 <p class="project-desc">A production-grade property listing backend with everything a real estate
                     platform needs.</p>
                 <ul class="project-features">
-                    <li>JWT auth with agent & user roles</li>
+                    <li>JWT auth with agent and user roles</li>
                     <li>Property search with 6 filter types</li>
                     <li>Pagination for efficient data loading</li>
                     <li>Reviews with anti-spam business rules</li>
@@ -984,11 +985,11 @@
                 <p class="project-desc">A retail inventory backend with full audit trails, stock tracking, and automated
                     alerts.</p>
                 <ul class="project-features">
-                    <li>Admin & staff role separation</li>
+                    <li>Admin and staff role separation</li>
                     <li>Complete stock movement audit trail</li>
                     <li>Auto price calculation on sales</li>
                     <li>Low stock alert endpoint</li>
-                    <li>Supplier & category management</li>
+                    <li>Supplier and category management</li>
                 </ul>
                 <div class="project-stack">
                     <span class="stack-tag">FastAPI</span>
@@ -1009,8 +1010,8 @@
                 <h3 class="project-title">Learning Management System API</h3>
                 <p class="project-desc">An LMS backend supporting courses, lessons, enrollments, and media uploads.</p>
                 <ul class="project-features">
-                    <li>Admin, instructor & student roles</li>
-                    <li>Course & lesson management</li>
+                    <li>Admin, instructor and student roles</li>
+                    <li>Course and lesson management</li>
                     <li>Student enrollment system</li>
                     <li>Cloudinary media uploads</li>
                     <li>Secure JWT authentication</li>
@@ -1044,13 +1045,26 @@
                 <div class="timeline-company">Self-directed · Personal Projects</div>
                 <ul class="timeline-desc">
                     <li>Built 3 personal production-style APIs using FastAPI, PostgreSQL, and Alembic</li>
-                    <li>Implemented JWT authentication, role-based access control, and Cloudinary integration</li>
+                    <li>Implemented JWT authentication, role based access control, and Cloudinary integration</li>
                     <li>Deployed all projects to Render with live PostgreSQL databases</li>
                 </ul>
             </div>
 
             <div class="timeline-item">
-                <div class="timeline-dot" style="background: var(--accent2)"></div>
+                <div class="timeline-dot" style="background: var(--accent3)"></div>
+                <div class="timeline-period">Jan 2025 – Present</div>
+                <div class="timeline-role">IT Support Specialist</div>
+                <div class="timeline-company">Edgard Consulting Limited</div>
+                <ul class="timeline-desc">
+                    <li>Provided technical support, including hardware troubleshooting, software installation, and
+                        system maintenance</li>
+                    <li>Managed network configurations and diagnosed connectivity issues</li>
+                    <li>Trained non-technical staff on software tools and documented technical processes</li>
+                </ul>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot" style="background: var(--accent4)"></div>
                 <div class="timeline-period">Feb 2025 – Apr 2026</div>
                 <div class="timeline-role">QA Engineer</div>
                 <div class="timeline-company">Kinetech Digital Design</div>
@@ -1062,20 +1076,7 @@
             </div>
 
             <div class="timeline-item">
-                <div class="timeline-dot" style="background: var(--accent4)"></div>
-                <div class="timeline-period">2023 – 2024</div>
-                <div class="timeline-role">IT Support Specialist</div>
-                <div class="timeline-company">Edgard Consulting Limited</div>
-                <ul class="timeline-desc">
-                    <li>Provided technical support — hardware troubleshooting, software installation, system maintenance
-                    </li>
-                    <li>Managed network configurations and diagnosed connectivity issues</li>
-                    <li>Trained non-technical staff on software tools and documented technical processes</li>
-                </ul>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot" style="background: var(--accent3)"></div>
+                <div class="timeline-dot" style="background: var(--accent2)"></div>
                 <div class="timeline-period">2021 – 2025</div>
                 <div class="timeline-role">B.Sc. Microbiology</div>
                 <div class="timeline-company">Federal University of Lafia, Nasarawa State</div>
@@ -1110,8 +1111,8 @@
             <div class="section-label" style="justify-content:center">let's talk</div>
             <h2 class="section-title" style="text-align:center">Get In Touch</h2>
             <p class="contact-tagline reveal">
-                I'm currently <strong style="color:var(--accent1)">open to opportunities</strong> — whether it's a
-                full-time role, internship, or freelance project. Fill the form below or reach out directly!
+                I'm currently open to opportunities, whether it's a full-time role, internship, or freelance project.
+                Fill the form below or reach out directly.
             </p>
 
             <form class="contact-form reveal" action="https://formspree.io/f/mgoblvyg" method="POST" id="contact-form">
@@ -1129,7 +1130,7 @@
                 </div>
                 <button type="submit" class="form-submit">Send Message</button>
                 <div class="success-banner" id="success-banner">
-                    Message sent! I'll get back to you within 24 hours.
+                    Message sent. I'll get back to you within 24 hours.
                 </div>
             </form>
 
@@ -1149,7 +1150,7 @@
 
     <footer>
         <span>© 2025 Irene Peter-Okon Idara</span>
-        <span>Built with FastAPI and a lot of coffee</span>
+        <span>Built with FastAPI and a lot of 💖</span>
     </footer>
 
     <script>
