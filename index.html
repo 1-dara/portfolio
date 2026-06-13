@@ -20,17 +20,17 @@
 
     <style>
         :root {
-            --bg: #2a1a1c;
-            --bg2: #311e21;
-            --bg3: #3d2529;
-            --card: #362024;
-            --border: #5a3a3e;
-            --accent1: #f4acb7;
-            --accent2: #ffcad4;
-            --accent3: #d8e2dc;
-            --accent4: #9d8189;
-            --text: #fdf6f3;
-            --muted: #c9a8ad;
+            --bg: #1a0508;
+            --bg2: #220609;
+            --bg3: #2e0a0f;
+            --card: #270810;
+            --border: #5c1420;
+            --accent1: #ff2d55;
+            --accent2: #ff6b9d;
+            --accent3: #ff9b71;
+            --accent4: #c41e3a;
+            --text: #fff0f0;
+            --muted: #d49ba3;
         }
 
         * {
@@ -882,11 +882,38 @@
                 text-align: center;
             }
         }
+
+        .cursor-dot {
+            width: 24px;
+            height: 24px;
+            border: 2px solid var(--accent1);
+            border-radius: 50%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: 9999;
+            transform: translate(-50%, -50%);
+            transition: width 0.2s, height 0.2s, background 0.2s;
+            mix-blend-mode: difference;
+        }
+
+        .cursor-dot.active {
+            width: 48px;
+            height: 48px;
+            background: rgba(255, 45, 85, 0.2);
+        }
+
+        @media (max-width: 900px) {
+            .cursor-dot {
+                display: none;
+            }
+        }
     </style>
 </head>
 
 <body>
-
+    <div class="cursor-dot" id="cursorDot"></div>
     <nav>
         <a href="#home" class="nav-logo">irene.dev</a>
         <ul class="nav-links">
@@ -1273,6 +1300,27 @@
                 document.getElementById('success-banner').style.display = 'block';
                 form.reset();
             }
+        });// Cursor follower
+        const cursorDot = document.getElementById('cursorDot');
+        let mouseX = 0, mouseY = 0, dotX = 0, dotY = 0;
+
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+        });
+
+        function animateCursor() {
+            dotX += (mouseX - dotX) * 0.15;
+            dotY += (mouseY - dotY) * 0.15;
+            cursorDot.style.left = dotX + 'px';
+            cursorDot.style.top = dotY + 'px';
+            requestAnimationFrame(animateCursor);
+        }
+        animateCursor();
+
+        document.querySelectorAll('a, button, .btn-primary, .btn-secondary').forEach(el => {
+            el.addEventListener('mouseenter', () => cursorDot.classList.add('active'));
+            el.addEventListener('mouseleave', () => cursorDot.classList.remove('active'));
         });
     </script>
 
