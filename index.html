@@ -107,11 +107,44 @@
         .hero {
             min-height: 100vh;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
+            align-items: center;
+            justify-content: space-between;
+            gap: 3rem;
             padding: 8rem 3rem 4rem;
             position: relative;
             overflow: hidden;
+        }
+
+        .hero-left {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .hero-img {
+            width: 380px;
+            height: 380px;
+            border-radius: 24px;
+            object-fit: cover;
+            border: 4px solid var(--accent1);
+            box-shadow: 0 0 60px rgba(244, 172, 183, 0.4);
+            opacity: 0;
+            animation: fadeUp 0.8s ease 0.3s forwards;
+            flex-shrink: 0;
+        }
+
+        @media (max-width: 900px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-img {
+                width: 250px;
+                height: 250px;
+                order: -1;
+            }
         }
 
         .hero-bg {
@@ -191,17 +224,7 @@
             animation: fadeUp 0.8s ease 0.7s forwards;
         }
 
-        .hero-img {
-            width: 220px;
-            height: 220px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid var(--accent1);
-            box-shadow: 0 0 40px rgba(244, 172, 183, 0.4);
-            margin-bottom: 2rem;
-            opacity: 0;
-            animation: fadeUp 0.8s ease 0.3s forwards;
-        }
+
 
         .btn-primary {
             padding: 0.9rem 2rem;
@@ -834,19 +857,21 @@
 
     <section class="hero" id="home">
         <div class="hero-bg"></div>
-        <div class="hero-tag">Backend Engineer</div>
-        <img src="profile.jpg" alt="Irene Idara" class="hero-img">
-        <h1 class="hero-name">Irene<br><span>Idara.</span></h1>
-        <p class="hero-title">I build the invisible layer<br>that powers everything.</p>
-        <p class="hero-desc">
-            Backend engineer specializing in <strong>FastAPI</strong>, <strong>PostgreSQL</strong>, and <strong>cloud
-                deployments</strong>. I turn complex business logic into clean, scalable APIs that actually work in
-            production.
-        </p>
-        <div class="hero-btns">
-            <a href="#projects" class="btn-primary">See My Work ↓</a>
-            <a href="#contact" class="btn-secondary">Get In Touch</a>
+        <div class="hero-left">
+            <div class="hero-tag">Backend Engineer · Nigeria</div>
+            <h1 class="hero-name">Irene<br><span>Idara.</span></h1>
+            <p class="hero-title">I build the invisible layer<br>that powers everything.</p>
+            <p class="hero-desc">
+                Backend engineer specializing in <strong>FastAPI</strong>, <strong>PostgreSQL</strong>, and
+                <strong>cloud deployments</strong>. I turn complex business logic into clean, scalable APIs that
+                actually work in production.
+            </p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn-primary">See My Work ↓</a>
+                <a href="#contact" class="btn-secondary">Get In Touch</a>
+            </div>
         </div>
+        <img src="profile.jpg" alt="Irene Idara" class="hero-img">
     </section>
 
     <section id="about">
