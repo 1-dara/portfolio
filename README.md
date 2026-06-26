@@ -70,21 +70,16 @@ A personal finance backend built with TypeScript and MongoDB, featuring expense 
 
 ---
 
-
----
-
 ## Technical Skills
 
-<ul>
-  <li><strong>Languages:</strong> Python, TypeScript, JavaScript</li>
-  <li><strong>Frameworks:</strong> FastAPI, Express, Node.js</li>
-  <li><strong>Databases:</strong> PostgreSQL, MongoDB, SQLAlchemy, Prisma ORM, Mongoose, Alembic</li>
-  <li><strong>Authentication &amp; Security:</strong> JWT, OAuth2, bcrypt, Role-Based Access Control (RBAC)</li>
-  <li><strong>API &amp; Testing Tools:</strong> Swagger UI, Postman, Thunder Client, REST API design</li>
-  <li><strong>Cloud &amp; Storage:</strong> Render, Cloudinary, MongoDB Atlas</li>
-  <li><strong>Frontend:</strong> HTML, CSS, JavaScript</li>
-  <li><strong>Version Control:</strong> Git, GitHub</li>
-</ul>
+- **Languages:** Python, TypeScript, JavaScript
+- **Frameworks:** FastAPI, Express, Node.js
+- **Databases:** PostgreSQL, MongoDB, SQLAlchemy, Prisma ORM, Mongoose, Alembic
+- **Authentication & Security:** JWT, OAuth2, bcrypt, Role-Based Access Control (RBAC)
+- **API & Testing Tools:** Swagger UI, Postman, Thunder Client, REST API design
+- **Cloud & Storage:** Render, Cloudinary, MongoDB Atlas
+- **Frontend:** HTML, CSS, JavaScript
+- **Version Control:** Git, GitHub
 
 ---
 
